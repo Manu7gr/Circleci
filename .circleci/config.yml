@@ -5,7 +5,7 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: pwd
+      - run: docker build . -t hello:lates
       - run: ls
       - run: echo "A first hai"
       - run: mkdir -p my_workspace
